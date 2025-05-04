@@ -18,11 +18,11 @@ public class GerenciadorUsuarios {
     
     public boolean cadastrarUsuario(Usuario usuario) {
         if (usuarios.containsKey(usuario.getId())) {
-            return false; // Usu�rio j� existe
+            return false; 
         }
         
         if (emailJaExiste(usuario.getEmail())) {
-            return false; // Email j� est� em uso
+            return false; 
         }
         
         usuarios.put(usuario.getId(), usuario);
